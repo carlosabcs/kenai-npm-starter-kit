@@ -30,14 +30,13 @@
     "min.css": "node-sass --output-style compressed ./public/style.un.css ./public/style.css",
     "min": "npm run min.html && npm run min.js && npm run uncss && npm run autoprefixer &&  npm run min.css && rimraf ./public/style.un.css",
     "build": "npm run assets && npm run min && npm run serve",
-    "start": "npm run devserve"
+    "start": "npm run assets && npm run devserve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonmircha/kenai-npm-starter-kit.git"
   },
   "keywords": [
-    "jonmircha",
     "kenai devtools",
     "devtools",
     "starter kit",
@@ -45,12 +44,8 @@
     "npm scripts",
     "web components"
   ],
-  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "author": "Carlos Córdova <carlosab1802@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jonmircha/kenai-npm-starter-kit/issues"
-  },
-  "homepage": "https://github.com/jonmircha/kenai-npm-starter-kit#readme",
   "devDependencies": {
     "autoprefixer": "^7.0.0",
     "babel-cli": "^6.24.0",
@@ -59,6 +54,7 @@
     "browser-sync": "^2.18.8",
     "browserify": "^14.3.0",
     "copy": "^0.3.0",
+    "ed-grid": "^2.8.1",
     "imagemin": "^5.2.2",
     "imagemin-cli": "^3.0.0",
     "imagemin-gifsicle": "^5.1.0",
